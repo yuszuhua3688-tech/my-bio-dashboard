@@ -9,7 +9,7 @@ from datetime import datetime
 st.set_page_config(page_title="台灣生物多樣性儀表板", layout="wide")
 
 st.title("🌿 台灣生物多樣性即時觀測儀表板")
-st.markdown("本專案透過 **TBN Open API** 實作自動化數據流水線，結合跨學科環境生態學修課背景開發。")
+st.markdown("本專案透過 **TBN Open API** 取得資料。")
 
 @st.cache_data(ttl=600) # 快取10分鐘
 def fetch_data(area):
